@@ -38,6 +38,16 @@ header{
     backdrop-filter:blur(12px);
     box-shadow:0 2px 20px rgba(0,0,0,0.05);
 }
+.dropdown a{
+text-decoration: none;
+color:black;
+
+}
+.dropdown-content a{
+    color:black;
+    border: 1px solid black;
+
+}
 
 .navbar{
     height:85px;
@@ -51,7 +61,7 @@ body.dark-mode{
 }
  
 body.dark-mode header{
-  background:#003262;
+  background:black;
 }
  
 body.dark-mode nav a{
@@ -70,8 +80,6 @@ body.dark-mode .logo{
 body.dark-mode .login{
   color:lightgoldenrodyellow;
 }
- 
-/* Optional Section Dark Mode */
  
 body.dark-mode .hero,
 body.dark-mode .services,
@@ -115,8 +123,55 @@ body.dark-mode .testimonial-card{
 .nav-links a:hover{
     color:var(--primary);
 }
-
-.right-section{
+.dropdown{
+ position:relative;
+}
+ 
+.drop-btn{
+ display:flex;
+ align-items:center;
+ gap:5px;
+ color: black;
+}
+ 
+.dropdown-content{
+ position:absolute;
+ top:38px;
+ left:0;
+ 
+ background:#fff;
+ min-width:180px;
+ border-radius:12px;
+ overflow:hidden;
+ 
+ box-shadow:0 10px 30px rgba(0,0,0,0.15);
+ 
+ opacity:0;
+ visibility:hidden;
+ transform:translateY(10px);
+ 
+ transition:0.3s ease;
+}
+ 
+.dropdown-content a{
+ display:block;
+ color:black;
+ padding:14px 18px;
+ font-size:15px;
+}
+ 
+.dropdown-content a:hover{
+ background:#f3f7f3;
+ padding-left:24px;
+ color:black;
+}
+ 
+.dropdown:hover .dropdown-content{
+ opacity:1;
+ visibility:visible;
+ transform:translateY(0);
+}
+ .right-section{
     display:flex;
     align-items:center;
     gap:14px;
@@ -316,7 +371,7 @@ section{
 }
 
 .review-card{
-    background:lightgoldenrodyellow;
+    
     padding:30px;
     border-radius:25px;
     box-shadow:var(--shadow);
@@ -345,7 +400,7 @@ section{
 }
 
 .price-card{
-    background:lightgoldenrodyellow;
+    
     padding:40px;
     border-radius:30px;
     text-align:center;
@@ -399,6 +454,8 @@ section{
 
 .gallery-grid img{
     width:100%;
+    height:400px;
+    object-fit:cover;
     border-radius:20px;
     transition:0.4s;
 }
@@ -407,9 +464,11 @@ section{
     transform:scale(1.04);
 }
 
-footer{
-    background:black;
-    color:lightgoldenrodyellow;
+
+
+.footer{
+    background:rgb(255, 253, 253);
+    color:rgb(0, 0, 0);
     padding:50px 0 30px;
     height:200px;
 
@@ -421,7 +480,7 @@ list-style: none;
 }
 .footer-content a{
     text-decoration: none;
-    color: white;
+    color: rgb(0, 0, 0);
 }
 
 .footer-content{
