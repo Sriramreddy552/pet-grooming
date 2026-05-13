@@ -235,10 +235,6 @@ nav a:hover{
 .book-btn:hover{
     background:pink;
 }
-
-
-
-
 .footer{
     background:rgb(255, 253, 253);
     color:rgb(0, 0, 0);
@@ -257,11 +253,10 @@ list-style: none;
 }
 
 .footer-content{
-    display:grid;
- grid-template-columns: repeat(5,1fr);
-    justify-content:space-between;
-    flex-wrap:wrap;
-    gap:40px;
+   display: flex;
+    justify-content: space-between; 
+    flex-wrap: wrap;
+    gap: 40px;
 }
 
 .footer-social{
@@ -285,6 +280,42 @@ list-style: none;
 .footer-social i:hover{
     background:var(--primary);
 }
+.footer-legal li{
+  list-style: none;
+  color: black;
+ 
+}
+.footer-legal a{
+  color: rgb(8, 8, 8);
+  text-decoration: none;
+  transition: 0.3s ease;
+
+}
+.footer-legal a:hover{
+  color: var(--primary);
+}
+.footer-legal{
+  display: flex;
+  gap: 20px;
+}   
+.footer-bottom{
+  border-top:1px solid gray;
+  padding-left:100px ;
+  padding-right: 100px;
+  color:black;
+  display: flex;
+  justify-content: space-between;
+  padding: 20px;
+}
+.footer-section{
+    width: 200px;
+}
+ 
+
+
+
+
+
 
 @media(max-width:1100px){
 
