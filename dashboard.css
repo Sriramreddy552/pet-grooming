@@ -95,7 +95,7 @@ body{
     display:flex;
     align-items:center;
     gap:15px;
-    margin-top: 80px;
+    
 }
 
 .profile img{
@@ -281,7 +281,9 @@ body{
  transition:0.35s ease;
  text-decoration: none;
 }
- 
+ .navbar span{
+    margin-top: 10px;
+ }
 .navbar.scrolled{
  background:rgba(17,17,17,0.92);
  box-shadow:0 10px 30px rgba(0,0,0,0.18);
