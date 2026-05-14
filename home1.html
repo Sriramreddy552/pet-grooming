@@ -1,174 +1,175 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link rel="stylesheet" href="home1.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="home1.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
 </head>
+
 <body>
-    <header>
-<div class="container">
+  <header>
+    <nav class="navbar">
+      <a style="text-decoration: none;" href="index.html" class="logo"><span>Paw</span>Lux</a>
 
-<nav class="navbar">
-    <div class="logo">
-        Paw<span>Lux</span>
-    </div>
-     <div class="dropdown">
-    <a href="index.html" class="drop-btn">Home ▾</a>
- 
-    <div class="dropdown-content">
-      <a href="home1.html" class="drop-btn">Home 1</a>
-     
-    </div>
+      <ul class="nav-links">
+        <li class="dropdown">
+          <a href="index.html">Home ▾</a>
+
+          <ul class="dropdown-menu">
+            <li><a href="index.html">Home 1</a></li>
+            <li><a href="home1.html">Home 2</a></li>
+          </ul>
+        </li>
+
+        <li><a href="about.html">About</a></li>
+        <li><a href="services.html">Services</a></li>
+        <li><a href="pricing.html">Pricing</a></li>
+
+        <li><a href="blog.html">Blog</a></li>
+        <li><a href="contactus.html">Contact</a></li>
+
+        <li><a href="dashboard.html">Dashboard</a></li>
+
+      </ul>
+      <button id="rtl-toggle" class="icon-btn">
+        RTL
+      </button>
+      <button id="theme-toggle" class="icon-btn">
+
+        <div class="menu-toggle">☰</div>
+        <div class="button-group">
+          <div class="right-section">
+            <button class="btn secondary-btn" onclick="document.location='login.html'">
+              Login
+            </button>
+
+          </div>
+
+        </div>
+    </nav>
+  </header>
   </div>
+  <section class="hero">
+    <div class="overlay"></div>
+    <div class="hero-text">
+      <h1>Luxury Care <br> For Your Pets</h1>
 
-    <ul class="nav-links">
-       
-        <li><a href="#">About</a></li>
-        <li><a href="#">Services</a></li>
-        <li><a href="#">Pricing</a></li>
-        <li><a href="#">Blog</a></li>
-        <li><a href="#">Contact</a></li>
-        <li><a href="#">Dashboard</a></li>
-    </ul>
-  <button id="rtl-toggle" class="icon-btn">
-    RTL
-  </button>
-  <button id="theme-toggle" class="icon-btn">
- 
-        </button>
-    <div class="button-group">
-    <div class="right-section">
-        <button class="btn secondary-btn">
-            Login
-        </button>
-        
+      <p>
+        Premium grooming, relaxing spa treatments, and <br>
+        loving care designed to keep your furry friends <br>
+        healthy, stylish, and happy.
+      </p>
 
+      <div class="hero-buttons">
+        <button class="btn1">Explore Services</button>
+        <button class="btn2">Watch Video</button>
+      </div>
+
+      <div class="stats">
+        <div>
+          <h2>5K+</h2>
+          <span>Happy Pets</span>
+        </div>
+
+        <div>
+          <h2>12+</h2>
+          <span>Expert Groomers</span>
+        </div>
+
+        <div>
+          <h2>8+</h2>
+          <span>Years Experience</span>
+        </div>
+      </div>
     </div>
 
-</div>
-</header>
-</nav>
-    <section class="hero">
-       <div class="overlay"></div>
-        <div class="hero-text">
-            <h1>Luxury Care <br> For Your Pets</h1>
 
-            <p>
-                Premium grooming, relaxing spa treatments, and <br>
-                loving care designed to keep your furry friends <br>
-                healthy, stylish, and happy.
-            </p>
+  </section>
+  <section class="services">
 
-            <div class="hero-buttons">
-                <button class="btn1">Explore Services</button>
-                <button class="btn2">Watch Video</button>
-            </div>
+    <h2>Our Premium Services</h2>
 
-            <div class="stats">
-                <div>
-                    <h2>5K+</h2>
-                    <span>Happy Pets</span>
-                </div>
+    <div class="service-box">
 
-                <div>
-                    <h2>12+</h2>
-                    <span>Expert Groomers</span>
-                </div>
+      <div class="card">
+        <h3>Pet Bathing</h3>
+        <p>Refreshing bath with premium pet-friendly products.</p>
+      </div>
 
-                <div>
-                    <h2>8+</h2>
-                    <span>Years Experience</span>
-                </div>
-            </div>
-        </div>
+      <div class="card">
+        <h3>Hair Styling</h3>
+        <p>Professional trimming and stylish grooming care.</p>
+      </div>
 
-    
-    </section>
-    <section class="services">
+      <div class="card">
+        <h3>Spa Therapy</h3>
+        <p>Relaxing massages and skin treatments for pets.</p>
+      </div>
 
-        <h2>Our Premium Services</h2>
-
-        <div class="service-box">
-
-            <div class="card">
-                <h3>Pet Bathing</h3>
-                <p>Refreshing bath with premium pet-friendly products.</p>
-            </div>
-
-            <div class="card">
-                <h3>Hair Styling</h3>
-                <p>Professional trimming and stylish grooming care.</p>
-            </div>
-
-            <div class="card">
-                <h3>Spa Therapy</h3>
-                <p>Relaxing massages and skin treatments for pets.</p>
-            </div>
-
-        </div>
-    </section>
-    <script>
- const faqBoxes = document.querySelectorAll(".faq-box");
+    </div>
+  </section>
+  <script>
+    const faqBoxes = document.querySelectorAll(".faq-box");
 
     faqBoxes.forEach(box => {
       box.querySelector(".faq-question").addEventListener("click", () => {
-        
+
         box.classList.toggle("active");
 
       });
     });
 
   </script>
-   <section class="choose-us">
+  <section class="choose-us">
 
-        <div class="section-title">
-            <h1>Why Choose Us</h1>
-            <p>We provide premium care and grooming services for your lovely pets.</p>
-        </div>
+    <div class="section-title">
+      <h1>Why Choose Us</h1>
+      <p>We provide premium care and grooming services for your lovely pets.</p>
+    </div>
 
-        <div class="choose-container">
-            <div class="choose-box">
-                <img src="images/dog image.png" alt="Pet Care">
+    <div class="choose-container">
+      <div class="choose-box">
+        <img src="images/dog image.png" alt="Pet Care">
 
-                <h2>Professional Groomers</h2>
+        <h2>Professional Groomers</h2>
 
-                <p>
-                    Our experienced pet groomers provide safe, gentle,
-                    and professional grooming services for all breeds.
-                </p>
-            </div>
-             <div class="choose-box">
-                <img src="images/man photo.png" alt="Spa">
+        <p>
+          Our experienced pet groomers provide safe, gentle,
+          and professional grooming services for all breeds.
+        </p>
+      </div>
+      <div class="choose-box">
+        <img src="images/man photo.png" alt="Spa">
 
-                <h2>Premium Spa Services</h2>
+        <h2>Premium Spa Services</h2>
 
-                <p>
-                    We offer relaxing spa treatments, pet massage,
-                    bathing, and complete hygiene care.
-                </p>
-            </div>
+        <p>
+          We offer relaxing spa treatments, pet massage,
+          bathing, and complete hygiene care.
+        </p>
+      </div>
 
-            
-            <div class="choose-box">
-                <img src="images/sun image.png" alt="Products">
 
-                <h2>Safe Products</h2>
+      <div class="choose-box">
+        <img src="images/sun image.png" alt="Products">
 
-                <p>
-                    We use high-quality pet-friendly products that are
-                    safe for sensitive skin and fur.
-                </p>
-            </div>
-           </div>
+        <h2>Safe Products</h2>
 
-    </section>
-     <section class="appointment">
+        <p>
+          We use high-quality pet-friendly products that are
+          safe for sensitive skin and fur.
+        </p>
+      </div>
+    </div>
+
+  </section>
+  <section class="appointment">
 
     <div class="appointment-container">
-    <div class="appointment-image"></div>
+      <div class="appointment-image"></div>
       <div class="appointment-form">
 
         <h1>Book Appointment</h1>
@@ -230,7 +231,7 @@
     </div>
 
     <div class="review-container">
-    <div class="review-box">
+      <div class="review-box">
 
         <div class="quote-icon">
           <i class="fa-solid fa-quote-left"></i>
@@ -259,7 +260,7 @@
         </div>
 
       </div>
-       <div class="review-box">
+      <div class="review-box">
 
         <div class="quote-icon">
           <i class="fa-solid fa-quote-left"></i>
@@ -288,7 +289,7 @@
         </div>
 
       </div>
- <div class="review-box">
+      <div class="review-box">
 
         <div class="quote-icon">
           <i class="fa-solid fa-quote-left"></i>
@@ -321,13 +322,13 @@
     </div>
 
   </section>
- 
-   <section class="faq-section">
-   <div class="faq-title"> 
+
+  <section class="faq-section">
+    <div class="faq-title">
       <h1>Frequently Asked Questions</h1>
       <p>Everything you need to know about our pet grooming & spa services.</p>
     </div>
- <div class="faq-box">
+    <div class="faq-box">
       <div class="faq-question">
         What services do you provide?
       </div>
@@ -339,7 +340,7 @@
         </p>
       </div>
     </div>
-<div class="faq-box">
+    <div class="faq-box">
       <div class="faq-question">
         How long does grooming take?
       </div>
@@ -351,7 +352,7 @@
         </p>
       </div>
     </div>
-<div class="faq-box">
+    <div class="faq-box">
       <div class="faq-question">
         Is appointment booking necessary?
       </div>
@@ -363,7 +364,7 @@
         </p>
       </div>
     </div>
- <div class="faq-box">
+    <div class="faq-box">
       <div class="faq-question">
         Are your products safe for pets?
       </div>
@@ -377,16 +378,14 @@
     </div>
 
   </section>
- <footer class="footer">
+  <footer class="footer">
 
 <div class="container">
 
     <div class="footer-content">
 
         <div class="footer-section">
-             <div class="logo">
-        Paw<span>Lux</span>
-    </div>
+     <a style="text-decoration: none;" href="index.html" class="logo"><span>Paw</span>Lux</a>
             <p>Luxury Pet Grooming & Spa Services</p>
             <div>
            
@@ -457,41 +456,43 @@
     </div>
 
 </footer>
-<script>
+  
+      <script>
 
-const themeToggle = document.getElementById("theme-toggle");
- 
-  themeToggle.addEventListener("click", () => {
- 
-    document.body.classList.toggle("dark-mode");
- 
-    if(document.body.classList.contains("dark-mode")){
-      themeToggle.innerHTML = "☀️";
-    }
-    else{
-      themeToggle.innerHTML = "🌙";
-    }
- 
-  });
- 
-  const rtlToggle = document.getElementById("rtl-toggle");
- 
-  rtlToggle.addEventListener("click", () => {
- 
-    if(document.body.getAttribute("dir") === "rtl"){
- 
-      document.body.setAttribute("dir", "ltr");
- 
-    }
-    else{
- 
-      document.body.setAttribute("dir", "rtl");
- 
-    }
- 
-  });
- 
-</script>
-    
+        const themeToggle = document.getElementById("theme-toggle");
+
+        themeToggle.addEventListener("click", () => {
+
+          document.body.classList.toggle("dark-mode");
+
+          if (document.body.classList.contains("dark-mode")) {
+            themeToggle.innerHTML = "☀️";
+          }
+          else {
+            themeToggle.innerHTML = "🌙";
+          }
+
+        });
+
+        const rtlToggle = document.getElementById("rtl-toggle");
+
+        rtlToggle.addEventListener("click", () => {
+
+          if (document.body.getAttribute("dir") === "rtl") {
+
+            document.body.setAttribute("dir", "ltr");
+
+          }
+          else {
+
+            document.body.setAttribute("dir", "rtl");
+
+          }
+
+        });
+
+      </script>
+
 </body>
+
 </html>

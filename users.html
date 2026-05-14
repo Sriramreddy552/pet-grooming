@@ -1,145 +1,202 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Bath & Spa Service</title>
-
-    <link rel="stylesheet" href="Bathandspa.css">
-
-    <!-- Font Awesome -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <title>users</title>
+    <link rel="stylesheet" href="users.css">
 </head>
-
 <body>
     <header>
-        <nav class="navbar">
-            <a style="text-decoration: none;" href="index.html" class="logo"><span>Paw</span>Lux</a>
+    <nav class="navbar">
+      <a style="text-decoration: none;" href="index.html" class="logo"><span>Paw</span>Lux</a>
 
-            <ul class="nav-links">
-                <li class="dropdown">
-                    <a href="index.html">Home ▾</a>
+      <ul class="nav-links">
+        <li class="dropdown">
+          <a href="index.html">Home ▾</a>
 
-                    <ul class="dropdown-menu">
-                        <li><a href="index.html">Home 1</a></li>
-                        <li><a href="home1.html">Home 2</a></li>
-                    </ul>
-                </li>
+          <ul class="dropdown-menu">
+            <li><a href="index.html">Home 1</a></li>
+            <li><a href="home1.html">Home 2</a></li>
+          </ul>
+        </li>
 
-                <li><a href="about.html">About</a></li>
-                <li><a href="services.html">Services</a></li>
-                <li><a href="pricing.html">Pricing</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="services.html">Services</a></li>
+        <li><a href="pricing.html">Pricing</a></li>
 
-                <li><a href="blog.html">Blog</a></li>
-                <li><a href="contactus.html">Contact</a></li>
+        <li><a href="blog.html">Blog</a></li>
+        <li><a href="contactus.html">Contact</a></li>
 
-                <li><a href="dashboard.html">Dashboard</a></li>
+        <li><a href="dashboard.html">Dashboard</a></li>
 
-            </ul>
-            <button id="rtl-toggle" class="icon-btn">
-                RTL
+      </ul>
+      <button id="rtl-toggle" class="icon-btn">
+        RTL
+      </button>
+      <button id="theme-toggle" class="icon-btn">
+
+        <div class="menu-toggle">☰</div>
+        <div class="button-group">
+          <div class="right-section">
+            <button class="btn secondary-btn" onclick="document.location='login.html'">
+              Login
             </button>
-            <button id="theme-toggle" class="icon-btn">
 
-                <div class="menu-toggle">☰</div>
-                <div class="button-group">
-                    <div class="right-section">
-                        <button class="btn secondary-btn" onclick="document.location='login.html'">
-                            Login
-                        </button>
-
-                    </div>
-
-                </div>
-        </nav>
-    </header>
-
-    <!-- HERO SECTION -->
-
-    <section class="hero">
-
-        <div class="hero-content">
-
-            <h1>Bath & Spa Services</h1>
-
-            <p>
-                Premium bath and relaxing spa treatments
-                for your furry friends.
-            </p>
+          </div>
 
         </div>
+    </nav>
+  </header>
+    <section class="users-section">
 
-    </section>
+    <h2 class="section-title">Users Overview</h2>
 
-    <!-- DETAILS SECTION -->
-     <section class="info-section">
-    <div class="info-container">
+    <div class="users-table">
 
-        <div class="info-text">
-            <h2>Why Bath & Spa is Important for Pets</h2>
-
-            <p>
-                Regular bath and spa treatments are essential for maintaining your pet’s
-                overall health and hygiene. It helps remove dirt, bacteria, and excess oil
-                from the skin while keeping the coat fresh and clean.
-            </p>
-
-            <p>
-                Professional spa care also prevents skin infections, reduces shedding,
-                and keeps your pet feeling comfortable and active throughout the day.
-            </p>
-
-            <ul>
-                <li>✔ Prevents skin infections and allergies</li>
-                <li>✔ Removes dirt, ticks, and fleas</li>
-                <li>✔ Improves coat shine and softness</li>
-                <li>✔ Enhances overall pet comfort</li>
-            </ul>
-
+        <!-- HEADER -->
+        <div class="table-row table-header">
+            <div>User</div>
+            <div>Email</div>
+            <div>Pet Type</div>
+            <div>Status</div>
+            <div>Actions</div>
         </div>
 
-        <div class="info-image">
-            <img src="https://images.unsplash.com/photo-1517423440428-a5a00ad493e8?q=80&w=1000&auto=format&fit=crop"
-            alt="Pet Bath">
+        <!-- ROW 1 -->
+        <div class="table-row">
+            <div class="user-info">
+                <img src="images/johny.png" alt="">
+                <span>Johny</span>
+            </div>
+            <div>john@example.com</div>
+            <div>Dog</div>
+            <div><span class="status active">Active</span></div>
+            <div>
+                <button class="btn view">View</button>
+                <button class="btn delete">Delete</button>
+            </div>
         </div>
 
-    </div>
-</section>
-<section class="process-section">
-    <h2 class="section-title">Our Spa Process</h2>
-
-    <div class="process-container">
-
-        <div class="process-card">
-            <i class="fa-solid fa-hand-holding-heart"></i>
-            <h3>Gentle Inspection</h3>
-            <p>We first check your pet’s skin, coat, and overall condition before starting the spa.</p>
+        <!-- ROW 2 -->
+        <div class="table-row">
+            <div class="user-info">
+                <img src="images/sarah.png" alt="">
+                <span>Sarah </span>
+            </div>
+            <div>sarah@example.com</div>
+            <div>Cat</div>
+            <div><span class="status pending">Pending</span></div>
+            <div>
+                <button class="btn view">View</button>
+                <button class="btn delete">Delete</button>
+            </div>
         </div>
 
-        <div class="process-card">
-            <i class="fa-solid fa-shower"></i>
-            <h3>Warm Bath</h3>
-            <p>We use pet-safe shampoos and warm water for a relaxing bath experience.</p>
+        <!-- ROW 3 -->
+        <div class="table-row">
+            <div class="user-info">
+                <img src="images/dravid - Copy.png" alt="">
+                <span>Dravid </span>
+            </div>
+            <div>david@example.com</div>
+            <div>Rabbit</div>
+            <div><span class="status inactive">Inactive</span></div>
+            <div>
+                <button class="btn view">View</button>
+                <button class="btn delete">Delete</button>
+            </div>
         </div>
 
-        <div class="process-card">
-            <i class="fa-solid fa-wind"></i>
-            <h3>Drying & Grooming</h3>
-            <p>Gentle drying and brushing to keep the coat smooth, shiny, and clean.</p>
-        </div>
-
-        <div class="process-card">
-            <i class="fa-solid fa-sparkles"></i>
-            <h3>Final Touch</h3>
-            <p>We finish with light grooming and fragrance for a fresh and happy pet.</p>
+        <!-- ROW 4 -->
+        <div class="table-row">
+            <div class="user-info">
+                <img src="images/chat gpt priya.png" alt="">
+                <span>vinitha</span>
+            </div>
+            <div>emily@example.com</div>
+            <div>Dog</div>
+            <div><span class="status active">Active</span></div>
+            <div>
+                <button class="btn view">View</button>
+                <button class="btn delete">Delete</button>
+            </div>
         </div>
 
     </div>
+    <section class="users-section">
+
+  <div class="section-title">
+    <h2>Happy Pet Parents</h2>
+    <p>
+      Meet our lovely customers who trust our premium pet grooming
+      and spa services for their furry companions.
+    </p>
+  </div>
+
+  <div class="users-container">
+
+    <!-- User Card -->
+    <div class="user-card">
+      <div class="user-image">
+        <img src="images/sarah.png" alt="image">
+      </div>
+
+      <div class="user-info">
+        <h3>Priya Sharma</h3>
+        <span>Dog Owner</span>
+
+        <p>
+          “Amazing grooming experience! My golden retriever loved the spa and looked super fresh.”
+        </p>
+
+        <div class="pet-details">
+          <div class="pet-box">
+            <h4>3</h4>
+            <small>Visits</small>
+          </div>
+
+          <div class="pet-box">
+            <h4>4.9★</h4>
+            <small>Rating</small>
+          </div>
+
+          <a href="#" class="view-btn">View</a>
+        </div>
+      </div>
+    </div>
+
+    <!-- User Card -->
+    <div class="user-card">
+      <div class="user-image">
+        <img src="images/dravid.png" alt="image">
+      </div>
+
+      <div class="user-info">
+        <h3>Rahul Verma</h3>
+        <span>Cat Owner</span>
+
+        <p>
+          “Professional staff and clean environment. My cat felt calm and comfortable throughout.”
+        </p>
+
+        <div class="pet-details">
+          <div class="pet-box">
+            <h4>5</h4>
+            <small>Visits</small>
+          </div>
+
+          <div class="pet-box">
+            <h4>5.0★</h4>
+            <small>Rating</small>
+          </div>
+
+          <a href="#" class="view-btn">View</a>
+        </div>
+      </div>
+    </div>
 </section>
-      
-    
-        <footer class="footer">
+    <footer class="footer">
 
             <div class="container">
 
@@ -215,3 +272,6 @@
             </div>
 
         </footer>
+    
+</body>
+</html>

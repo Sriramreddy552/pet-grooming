@@ -8,47 +8,46 @@
 </head>
 <body>
     <header>
-<div class="container">
-
-<nav class="navbar">
-    <div class="logo">
-        Paw<span>Lux</span>
-    </div>
-     <div class="dropdown">
-    <a href="index.html" class="drop-btn">Home ▾</a>
+    <nav class="navbar">
+      <a style="text-decoration: none;" href="index.html" class="logo"><span>Paw</span>Lux</a>
  
-    <div class="dropdown-content">
-      <a href="home1.html" class="drop-btn">Home 1</a>
-     
-    </div>
-  </div>
-
-    <ul class="nav-links">
+      <ul class="nav-links">
+          <li class="dropdown">
+        <a href="index.html">Home ▾</a>
+ 
+        <ul class="dropdown-menu">
+          <li><a href="index.html">Home 1</a></li>
+          <li><a href="home1.html">Home 2</a></li>
+        </ul>
+      </li>
        
-        <li><a href="#">About</a></li>
-        <li><a href="#">Services</a></li>
-        <li><a href="#">Pricing</a></li>
-        <li><a href="#">Blog</a></li>
-        <li><a href="#">Contact</a></li>
-        
+        <li><a href="about.html">About</a></li>
+        <li><a href="services.html">Services</a></li>
+        <li><a href="pricing.html">Pricing</a></li>
+   
+        <li><a href="blog.html">Blog</a></li>
+        <li><a href="contactus.html">Contact</a></li>
+     
+        <li><a href="dashboard.html">Dashboard</a></li>
+ 
+      </ul>
   <button id="rtl-toggle" class="icon-btn">
     RTL
   </button>
   <button id="theme-toggle" class="icon-btn">
  
-        </button>
-    <div class="button-group">
+      <div class="menu-toggle">☰</div>
+          <div class="button-group">
     <div class="right-section">
-        <button class="btn secondary-btn">
+        <button class="btn secondary-btn" onclick="document.location='login.html'">
             Login
         </button>
         
-
     </div>
 
 </div>
-</header>
-
+    </nav>
+  </header>
  
 <section class="services-hero">
 
@@ -134,7 +133,7 @@
                         Trendy haircuts and stylish grooming for all breeds.
                     </p>
 
-                    <a href="#">Read More</a>
+                    <a href="Bathandspa.html">Read More</a>
                 </div>
 
             </div>
@@ -151,7 +150,7 @@
                         Safe and gentle nail trimming for your pet’s comfort.
                     </p>
 
-                    <a href="#">Read More</a>
+                    <a href="Bathandspa.html">Read More</a>
                 </div>
 
             </div>
@@ -168,7 +167,7 @@
                         Keep your pet’s teeth clean and healthy with dental care.
                     </p>
 
-                    <a href="#">Read More</a>
+                    <a href="Bathandspa.html">Read More</a>
                 </div>
 
             </div>
@@ -231,9 +230,7 @@
     <div class="footer-content">
 
         <div class="footer-section">
-             <div class="logo">
-        Paw<span>Lux</span>
-    </div>
+     <a style="text-decoration: none;" href="index.html" class="logo"><span>Paw</span>Lux</a>
             <p>Luxury Pet Grooming & Spa Services</p>
             <div>
            

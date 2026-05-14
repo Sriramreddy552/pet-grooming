@@ -1,145 +1,147 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Bath & Spa Service</title>
-
-    <link rel="stylesheet" href="Bathandspa.css">
-
-    <!-- Font Awesome -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <title>analytics</title>
+    <link rel="stylesheet" href="analytics.css">
 </head>
-
 <body>
-    <header>
-        <nav class="navbar">
-            <a style="text-decoration: none;" href="index.html" class="logo"><span>Paw</span>Lux</a>
+     <header>
+    <nav class="navbar">
+      <a style="text-decoration: none;" href="index.html" class="logo"><span>Paw</span>Lux</a>
 
-            <ul class="nav-links">
-                <li class="dropdown">
-                    <a href="index.html">Home ▾</a>
+      <ul class="nav-links">
+        <li class="dropdown">
+          <a href="index.html">Home ▾</a>
 
-                    <ul class="dropdown-menu">
-                        <li><a href="index.html">Home 1</a></li>
-                        <li><a href="home1.html">Home 2</a></li>
-                    </ul>
-                </li>
+          <ul class="dropdown-menu">
+            <li><a href="index.html">Home 1</a></li>
+            <li><a href="home1.html">Home 2</a></li>
+          </ul>
+        </li>
 
-                <li><a href="about.html">About</a></li>
-                <li><a href="services.html">Services</a></li>
-                <li><a href="pricing.html">Pricing</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="services.html">Services</a></li>
+        <li><a href="pricing.html">Pricing</a></li>
 
-                <li><a href="blog.html">Blog</a></li>
-                <li><a href="contactus.html">Contact</a></li>
+        <li><a href="blog.html">Blog</a></li>
+        <li><a href="contactus.html">Contact</a></li>
 
-                <li><a href="dashboard.html">Dashboard</a></li>
+        <li><a href="dashboard.html">Dashboard</a></li>
 
-            </ul>
-            <button id="rtl-toggle" class="icon-btn">
-                RTL
+      </ul>
+      <button id="rtl-toggle" class="icon-btn">
+        RTL
+      </button>
+      <button id="theme-toggle" class="icon-btn">
+
+        <div class="menu-toggle">☰</div>
+        <div class="button-group">
+          <div class="right-section">
+            <button class="btn secondary-btn" onclick="document.location='login.html'">
+              Login
             </button>
-            <button id="theme-toggle" class="icon-btn">
 
-                <div class="menu-toggle">☰</div>
-                <div class="button-group">
-                    <div class="right-section">
-                        <button class="btn secondary-btn" onclick="document.location='login.html'">
-                            Login
-                        </button>
-
-                    </div>
-
-                </div>
-        </nav>
-    </header>
-
-    <!-- HERO SECTION -->
-
-    <section class="hero">
-
-        <div class="hero-content">
-
-            <h1>Bath & Spa Services</h1>
-
-            <p>
-                Premium bath and relaxing spa treatments
-                for your furry friends.
-            </p>
+          </div>
 
         </div>
+    </nav>
+  </header>
+   
+    <section class="analytics-section">
 
-    </section>
+    <h2 class="section-title">Analytics Overview</h2>
 
-    <!-- DETAILS SECTION -->
-     <section class="info-section">
-    <div class="info-container">
+    <div class="analytics-grid">
 
-        <div class="info-text">
-            <h2>Why Bath & Spa is Important for Pets</h2>
-
-            <p>
-                Regular bath and spa treatments are essential for maintaining your pet’s
-                overall health and hygiene. It helps remove dirt, bacteria, and excess oil
-                from the skin while keeping the coat fresh and clean.
-            </p>
-
-            <p>
-                Professional spa care also prevents skin infections, reduces shedding,
-                and keeps your pet feeling comfortable and active throughout the day.
-            </p>
-
-            <ul>
-                <li>✔ Prevents skin infections and allergies</li>
-                <li>✔ Removes dirt, ticks, and fleas</li>
-                <li>✔ Improves coat shine and softness</li>
-                <li>✔ Enhances overall pet comfort</li>
-            </ul>
-
+        <!-- CARD 1 -->
+        <div class="analytics-card">
+            <i class="fa-solid fa-paw"></i>
+            <h3>Total Pets Groomed</h3>
+            <h1>12,480</h1>
+            <p>+18% this month</p>
         </div>
 
-        <div class="info-image">
-            <img src="https://images.unsplash.com/photo-1517423440428-a5a00ad493e8?q=80&w=1000&auto=format&fit=crop"
-            alt="Pet Bath">
+        <!-- CARD 2 -->
+        <div class="analytics-card">
+            <i class="fa-solid fa-calendar-check"></i>
+            <h3>Appointments</h3>
+            <h1>3,250</h1>
+            <p>+12% this week</p>
+        </div>
+
+        <!-- CARD 3 -->
+        <div class="analytics-card">
+            <i class="fa-solid fa-scissors"></i>
+            <h3>Grooming Sessions</h3>
+            <h1>8,940</h1>
+            <p>+22% growth</p>
+        </div>
+
+        <!-- CARD 4 -->
+        <div class="analytics-card">
+            <i class="fa-solid fa-face-smile"></i>
+            <h3>Happy Clients</h3>
+            <h1>9,870</h1>
+            <p>98% satisfaction</p>
         </div>
 
     </div>
-</section>
-<section class="process-section">
-    <h2 class="section-title">Our Spa Process</h2>
 
-    <div class="process-container">
+    <!-- CHART SECTION -->
 
-        <div class="process-card">
-            <i class="fa-solid fa-hand-holding-heart"></i>
-            <h3>Gentle Inspection</h3>
-            <p>We first check your pet’s skin, coat, and overall condition before starting the spa.</p>
+    <div class="chart-box">
+
+        <div class="chart-card">
+
+            <h3>Monthly Grooming Activity</h3>
+
+            <div class="bars">
+
+                <div class="bar" style="height:120px;"></div>
+                <div class="bar" style="height:180px;"></div>
+                <div class="bar" style="height:140px;"></div>
+                <div class="bar" style="height:220px;"></div>
+                <div class="bar" style="height:160px;"></div>
+                <div class="bar" style="height:200px;"></div>
+
+            </div>
+
         </div>
 
-        <div class="process-card">
-            <i class="fa-solid fa-shower"></i>
-            <h3>Warm Bath</h3>
-            <p>We use pet-safe shampoos and warm water for a relaxing bath experience.</p>
-        </div>
+        <!-- RIGHT SIDE STATS -->
 
-        <div class="process-card">
-            <i class="fa-solid fa-wind"></i>
-            <h3>Drying & Grooming</h3>
-            <p>Gentle drying and brushing to keep the coat smooth, shiny, and clean.</p>
-        </div>
+        <div class="stats-card">
 
-        <div class="process-card">
-            <i class="fa-solid fa-sparkles"></i>
-            <h3>Final Touch</h3>
-            <p>We finish with light grooming and fragrance for a fresh and happy pet.</p>
+            <h3>Service Distribution</h3>
+
+            <div class="stat-item">
+                <span>Bath & Spa</span>
+                <div class="progress"><div class="fill bath"></div></div>
+            </div>
+
+            <div class="stat-item">
+                <span>Hair Cut</span>
+                <div class="progress"><div class="fill haircut"></div></div>
+            </div>
+
+            <div class="stat-item">
+                <span>Nail Care</span>
+                <div class="progress"><div class="fill nail"></div></div>
+            </div>
+
+            <div class="stat-item">
+                <span>Skin Care</span>
+                <div class="progress"><div class="fill skin"></div></div>
+            </div>
+
         </div>
 
     </div>
+
 </section>
-      
-    
-        <footer class="footer">
+<footer class="footer">
 
             <div class="container">
 
@@ -215,3 +217,6 @@
             </div>
 
         </footer>
+    
+</body>
+</html>

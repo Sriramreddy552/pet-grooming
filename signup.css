@@ -10,28 +10,34 @@ body{
   overflow-x:hidden;
 }
  
-/* ================= LOGIN SECTION ================= */
+/* ================= SIGNUP SECTION ================= */
  
-.login-section{
+.signup-section{
   min-height:100vh;
  
   display:flex;
   justify-content:center;
   align-items:center;
  
-  padding:30px 20px;
+  padding:40px 20px;
  
   background:
   radial-gradient(circle at left,#f4b40022,transparent 30%),
   radial-gradient(circle at right,#00326255,transparent 30%),
   #081120;
 }
+.bl{
+    color:lightpink;
+}
+.yl{
+    color:black;
+}
  
-/* ================= LOGIN BOX ================= */
+/* ================= SIGNUP BOX ================= */
  
-.login-box{
+.signup-box{
   width:100%;
-  max-width:460px;
+  max-width:780px;   /* increased width */
  
   background:rgba(20,25,35,0.92);
  
@@ -39,7 +45,7 @@ body{
  
   border-radius:20px;
  
-  padding:20px 24px;
+  padding:18px 24px;   /* decreased height */
  
   backdrop-filter:blur(12px);
  
@@ -53,31 +59,24 @@ body{
 .logo{
   text-align:center;
  
-  font-size:32px;
+  font-size:30px;
   font-weight:700;
  
   color:#ffffff;
  
-  margin-bottom:4px;
- 
-}
-.bl{
-    color: pink;
-}
-.yl{
-    color:black ;
+  margin-bottom:0;
 }
  
 /* ================= TITLE ================= */
  
-.login-box h1{
+.signup-box h1{
   text-align:center;
  
   font-size:26px;
  
   color:#ffffff;
  
-  margin-bottom:6px;
+  margin-bottom:4px;
 }
  
 .subtitle{
@@ -85,15 +84,25 @@ body{
  
   color:#9ca3af;
  
-  font-size:13px;
+  font-size:12px;
  
-  margin-bottom:18px;
+  margin-bottom:16px;
 }
  
-/* ================= FORM ================= */
+/* ================= DOUBLE INPUT ================= */
+ 
+.double-input{
+  display:grid;
+ 
+  grid-template-columns:repeat(2,1fr);
+ 
+  gap:12px;
+}
+ 
+/* ================= INPUT GROUP ================= */
  
 .input-group{
-  margin-bottom:14px;
+  margin-bottom:10px;
 }
  
 .input-group label{
@@ -101,18 +110,18 @@ body{
  
   color:#ffffff;
  
-  font-size:13px;
-  font-weight:500;
+  font-size:12px;
+  font-weight:600;
  
-  margin-bottom:6px;
+  margin-bottom:4px;
 }
  
 .input-group input{
   width:100%;
  
-  padding:12px 14px;
+  padding:10px 12px;
  
-  border-radius:12px;
+  border-radius:10px;
  
   border:1px solid rgba(255,255,255,0.08);
  
@@ -120,51 +129,50 @@ body{
  
   color:#ffffff;
  
-  font-size:13px;
+  font-size:12px;
+ 
+  transition:0.3s;
 }
  
-.input-group input::placeholder{
-  color:#9ca3af;
+.input-group input:focus{
+  outline:none;
+ 
+  border-color:black;
+ 
+  box-shadow:0 0 6px rgba(244,180,0,0.2);
 }
  
-/* ================= OPTIONS ================= */
+/* ================= TERMS ================= */
  
-.options{
-  display:flex;
-  justify-content:space-between;
-  align-items:center;
- 
-  margin-bottom:16px;
-}
- 
-.remember{
+.terms{
   display:flex;
   align-items:center;
+ 
   gap:6px;
+ 
+  margin-bottom:14px;
  
   color:#ffffff;
  
-  font-size:12px;
+  font-size:11px;
 }
  
-.options a{
+.terms a{
   color:white;
  
   text-decoration:none;
- 
-  font-size:12px;
 }
  
-/* ================= LOGIN BUTTON ================= */
+/* ================= BUTTON ================= */
  
-.login-btn{
+.signup-btn{
   width:100%;
  
-  padding:12px;
+  padding:10px;
  
   border:none;
  
-  border-radius:12px;
+  border-radius:10px;
  
   background:lightpink;
  
@@ -178,7 +186,7 @@ body{
   transition:0.3s;
 }
  
-.login-btn:hover{
+.signup-btn:hover{
   background:lightpink;
 }
  
@@ -188,13 +196,13 @@ body{
   display:flex;
   align-items:center;
  
-  gap:12px;
+  gap:8px;
  
-  margin:18px 0;
+  margin:14px 0;
  
   color:#9ca3af;
  
-  font-size:11px;
+  font-size:10px;
 }
  
 .divider::before,
@@ -215,13 +223,13 @@ body{
  
   grid-template-columns:repeat(2,1fr);
  
-  gap:12px;
+  gap:10px;
 }
  
 .social-btn{
-  padding:12px;
+  padding:10px;
  
-  border-radius:12px;
+  border-radius:10px;
  
   border:1px solid rgba(255,255,255,0.08);
  
@@ -229,7 +237,7 @@ body{
  
   color:#ffffff;
  
-  font-size:13px;
+  font-size:12px;
   font-weight:500;
  
   cursor:pointer;
@@ -241,26 +249,25 @@ body{
   background:#003262;
 }
  
-/* ================= SIGNUP ================= */
+/* ================= LOGIN TEXT ================= */
  
-.signup-text{
+.login-text{
   text-align:center;
  
   color:#9ca3af;
  
-  margin-top:16px;
+  margin-top:12px;
  
-  font-size:12px;
+  font-size:11px;
 }
  
-.signup-text a{
-  color:white;
+.login-text a{
+  color:lightpink;
  
   text-decoration:none;
  
   font-weight:600;
 }
- 
 /* ================= ANIMATION ================= */
  
 @keyframes fadeUp{
@@ -281,30 +288,24 @@ body{
  
 @media(max-width:768px){
  
-  .login-box{
-    padding:35px 25px;
+  .signup-box{
+    padding:30px 22px;
   }
  
-  .logo{
-    font-size:42px;
-  }
- 
-  .login-box h1{
-    font-size:36px;
-  }
- 
-  .subtitle{
-    font-size:16px;
+  .double-input{
+    grid-template-columns:1fr;
+    gap:0;
   }
  
   .social-buttons{
     grid-template-columns:1fr;
   }
  
-  .options{
-    flex-direction:column;
-    align-items:flex-start;
-    gap:15px;
+  .signup-box h1{
+    font-size:34px;
   }
  
+  .logo{
+    font-size:38px;
+  }
 }
