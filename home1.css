@@ -1,4 +1,4 @@
- *{   
+*{
     margin:0;
     padding:0;
     box-sizing:border-box;
@@ -78,20 +78,17 @@ body.dark-mode .testimonial-card{
     color:var(--primary);
 }
 
-
-
-
 .navbar{
  position:fixed;
  top:0;
  left:0;
  width:100%;
  display:flex;
- justify-content:space-between;
+ justify-content:center;
  align-items:center;
  padding:22px 8%;
  z-index:1000;
- background:rgba(0,0,0,0.20);
+ background:whitesmoke;
  backdrop-filter:blur(10px);
  transition:0.35s ease;
  text-decoration: none;
@@ -117,13 +114,13 @@ body.dark-mode .testimonial-card{
  
 .nav-links{
  display:flex;
- gap:35px;
+ gap:25px;
  align-items:center;
  list-style: none;
 }
  
 .nav-links a{
- color:#ffffff;
+ color:black;
  font-size:15px;
  transition:0.3s;
  list-style: none;
@@ -161,6 +158,7 @@ body.dark-mode .testimonial-card{
 .dropdown-menu a{
  display:block;
  padding:13px 20px;
+ color: whitesmoke;
  
 }
  
@@ -177,6 +175,13 @@ body.dark-mode .testimonial-card{
  list-style: none;
 }
  
+ .right-section{
+    display:flex;
+    align-items:center;
+    gap:14px;
+}
+
+
 
 nav a {
   text-decoration: none;
@@ -199,30 +204,11 @@ nav a:hover::after {
   width: 100%;
 }
 
-
-
-
-
-
-
-
-
-
-
-
-
-
- .right-section{
-    display:flex;
-    align-items:center;
-    gap:14px;
-}
-
 .icon-btn{
     width:45px;
     height:45px;
     border:none;
-    border-radius:12px;
+    border-radius:30px;
     background:lightgoldenrodyellow;
     box-shadow:var(--shadow);
     display:flex;
@@ -232,6 +218,8 @@ nav a:hover::after {
     transition:0.3s;
     color:var(--dark);
     font-size:18px;
+    gap: 10px;
+    margin-left: 30px;
 }
 
 .icon-btn:hover{
@@ -269,24 +257,6 @@ nav a:hover::after {
 
 .primary-btn:hover{
     transform:translateY(-3px);
-}
-nav a:hover{
-    color:pink;
-}
-
-.book-btn{
-    padding:12px 22px;
-    border:none;
-    background:pink;
-    color:white;
-    border-radius:30px;
-    cursor:pointer;
-    font-weight:bold;
-    transition:0.3s;
-}
-
-.book-btn:hover{
-    background:pink;
 }
 .hero{
     min-height:100vh;
@@ -783,11 +753,11 @@ nav a:hover{
       font-size:14px;
     }
     
-footer{
-    background:rgb(255, 253, 253);
+.footer{
+    background:whitesmoke;
     color:rgb(0, 0, 0);
     padding:50px 0 30px;
-    height:200px;
+    height:230px;
 
 }
 
@@ -845,20 +815,24 @@ list-style: none;
 .footer-legal{
   display: flex;
   gap: 20px;
+  padding-left: 40px;
+  background-color: whitesmoke;
+
 }   
 .footer-bottom{
-  border-top:1px solid gray;
+  border-top:1px solid black;
   padding-left:100px ;
   padding-right: 100px;
   color:black;
   display: flex;
   justify-content: space-between;
   padding: 20px;
+  margin-right: 55px;
 }
 .footer-section{
     width: 200px;
-} 
-    
+}
+ 
 
 
 

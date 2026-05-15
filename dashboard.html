@@ -14,6 +14,7 @@
     <!-- FONT AWESOME -->
     <link rel="stylesheet"
     href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    
 </head>
 
 <body>
@@ -45,15 +46,30 @@
     <!-- TOPBAR -->
 
     <div class="topbar">
+        <div class="profile">
+            <!-- <h3>Admin</h3> -->
+            <img src="images/man photo.png" alt="photo">
+        </div>
 
         <div class="search-box">
             <input type="text" placeholder="Search here...">
         </div>
+        <!-- THEME CONTROLS -->
+<div class="top-actions">
 
-        <div class="profile">
+    <button id="rtl-toggle" class="action-btn">RTL</button>
+
+    <button id="theme-toggle" class="action-btn">Dark</button>
+    <button class="action-btn"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-bell-fill" viewBox="0 0 16 16">
+  <path d="M8 16a2 2 0 0 0 2-2H6a2 2 0 0 0 2 2m.995-14.901a1 1 0 1 0-1.99 0A5 5 0 0 0 3 6c0 1.098-.5 6-2 7h14c-1.5-1-2-5.902-2-7 0-2.42-1.72-4.44-4.005-4.901"/>
+</svg></button>
+
+</div>
+
+        <!-- <div class="profile">
             <h3>Admin</h3>
             <img src="images/man photo.png" alt="photo">
-        </div>
+        </div> -->
 
     </div>
 
@@ -89,11 +105,7 @@
             <p>$45,200 Monthly Revenue</p>
         </div>
 
-        <div class="card">
-            <i class="fa-solid fa-comments"></i>
-            <h2>Messages</h2>
-            <p>1,250 Unread Messages</p>
-        </div>
+       
 
     </div>
 
@@ -196,6 +208,19 @@
 
     </div>
     </div>
+    <script>
+const rtlBtn = document.getElementById("rtl-toggle");
+const themeBtn = document.getElementById("theme-toggle");
+
+rtlBtn.onclick = () => {
+    document.body.classList.toggle("rtl-mode");
+};
+
+themeBtn.onclick = () => {
+    document.body.classList.toggle("dark-mode");
+    themeBtn.innerText =
+        document.body.classList.contains("dark-mode") ? "Light" : "Dark";
+};
+</script>
     </body>
     </html>
-       

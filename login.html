@@ -8,11 +8,21 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
  
   <title>paw lux</title>
+ 
   <link rel="shortcut icon" href="images/logo.png" type="image/x-icon">
+ 
+  <!-- GOOGLE FONT -->
  
   <link rel="preconnect" href="https://fonts.googleapis.com">
  
   <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+ 
+  <!-- FONT AWESOME -->
+ 
+  <link rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+ 
+  <!-- CSS -->
  
   <link rel="stylesheet" href="login.css">
  
@@ -26,11 +36,35 @@
  
   <div class="login-box">
  
+    <!-- THEME + RTL BUTTONS -->
+ 
+    <div class="theme-wrapper">
+ 
+      <!-- THEME BUTTON -->
+ 
+      <button class="theme-toggle" id="themeToggle">
+ 
+        <i class="fa-solid fa-moon"></i>
+ 
+        <span></span>
+ 
+      </button>
+ 
+      <!-- RTL BUTTON -->
+ 
+      <button class="rtl-toggle" id="rtlToggle">
+ 
+        RTL
+ 
+      </button>
+ 
+    </div>
+ 
     <!-- LOGO -->
  
-    <div class="logo">
+    <div class="logo" onclick="document.location='index.html'">
  
-      <span class="bl">paw</span>
+      <span class="bl">Paw </span>
       <span class="yl">lux</span>
  
     </div>
@@ -87,7 +121,7 @@
  
         </div>
  
-        <a href="#">Forgot Password?</a>
+        <a href="forgot.html">Forgot Password?</a>
  
       </div>
  
@@ -136,6 +170,10 @@
   </div>
  
 </section>
+ 
+<!-- ================= SCRIPT ================= -->
+ 
+<script src="login.js"></script>
  
 </body>
  
