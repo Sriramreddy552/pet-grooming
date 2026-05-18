@@ -621,4 +621,8 @@ list-style: none;
         font-size:42px;
     }
 }
+.mm{
 
+display: flex;
+justify-content: center;
+}

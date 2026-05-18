@@ -1,0 +1,101 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: 'Poppins', sans-serif;
+    background: #f5f7fb;
+}
+
+/* SECTION */
+.grooming-section{
+    padding: 80px 20px;
+}
+
+.container{
+    max-width: 1200px;
+    margin: auto;
+}
+
+/* TITLE */
+.section-title{
+    text-align: center;
+    margin-bottom: 60px;
+}
+
+.section-title h1{
+    font-size: 42px;
+    color: #222;
+    margin-bottom: 15px;
+}
+
+.section-title p{
+    color: #666;
+    font-size: 17px;
+}
+
+/* GRID */
+.tips-grid{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 30px;
+}
+
+/* CARD */
+.tip-card{
+    background: #fff;
+    padding: 35px 25px;
+    border-radius: 18px;
+    box-shadow: 0 8px 25px rgba(0,0,0,0.08);
+    transition: 0.3s ease;
+    position: relative;
+    overflow: hidden;
+}
+
+.tip-card:hover{
+    transform: translateY(-10px);
+}
+
+/* NUMBER */
+.tip-number{
+    width: 60px;
+    height: 60px;
+    background: lightpink;
+    color: #fff;
+    font-size: 22px;
+    font-weight: 600;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 20px;
+}
+
+/* HEADING */
+.tip-card h2{
+    font-size: 24px;
+    color: #222;
+    margin-bottom: 15px;
+}
+
+/* PARAGRAPH */
+.tip-card p{
+    color: #666;
+    line-height: 1.7;
+    font-size: 15px;
+}
+
+/* RESPONSIVE */
+@media(max-width:768px){
+
+    .section-title h1{
+        font-size: 30px;
+    }
+
+    .tip-card{
+        padding: 25px 20px;
+    }
+
+}
