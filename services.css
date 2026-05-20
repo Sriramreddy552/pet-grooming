@@ -39,7 +39,7 @@ body.dark-mode header{
 }
  
 body.dark-mode nav a{
-  color:lightgoldenrodyellow;
+  color:rgb(0, 0, 0);
 }
  
 body.dark-mode .icon-btn{
@@ -48,7 +48,7 @@ body.dark-mode .icon-btn{
 }
  
 body.dark-mode .logo{
-  color:lightgoldenrodyellow;
+  color:rgb(0, 0, 0);
 }
  
 body.dark-mode .login{
@@ -67,7 +67,7 @@ body.dark-mode .service-card,
 body.dark-mode .feature-box,
 body.dark-mode .testimonial-card{
   background:#1f2937;
-  color:lightgoldenrodyellow;
+  color:rgb(0, 0, 0);
 }
 .logo{
     font-size:30px;
@@ -569,7 +569,10 @@ margin-top: 20px;
     font-size: 24px;
     margin-bottom: 15px;
 }
-
+body.dark-mode .process-box{
+    background:#1f2937;
+    color:rgb(0, 0, 0);
+}
 .process-box p{
     line-height: 1.6;
 }

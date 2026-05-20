@@ -38,7 +38,7 @@ body.dark-mode header{
 }
  
 body.dark-mode nav a{
-  color:lightgoldenrodyellow;
+  color:rgb(0, 0, 0);
 }
  
 body.dark-mode .icon-btn{
@@ -47,7 +47,7 @@ body.dark-mode .icon-btn{
 }
  
 body.dark-mode .logo{
-  color:lightgoldenrodyellow;
+  color:rgb(0, 0, 0);
 }
  
 body.dark-mode .login{
@@ -321,13 +321,15 @@ nav a:hover::after {
       font-size:42px;
       margin-bottom:20px;
     }
-
+ body.dark-mode .contact-info h2{
+  color:rgb(0, 0, 0); }
     .contact-info p{
       color:var(--light);
       line-height:1.8;
       margin-bottom:35px;
     }
-
+body.dark-mode .contact-info p{
+  color:rgb(0, 0, 0); }
     .info-box{
       display:flex;
       align-items:center;
@@ -355,6 +357,9 @@ nav a:hover::after {
     .info-text h3{
       margin-bottom:6px;
     }
+    body.dark-mode .info-text h3{
+      color:rgb(0, 0, 0);
+    } 
 
     .info-text p{
       margin:0;

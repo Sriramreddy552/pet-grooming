@@ -5,16 +5,21 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
    <link rel="stylesheet" href="about.css">
-  
- href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+
+<link rel="stylesheet"
+href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
 </head>
 </head>
 <body>
     <header>
     <nav class="navbar">
-      <a style="text-decoration: none; margin-right: 100px" href="index.html" class="logo"><span>Paw</span>Lux</a>
- 
-      <ul class="nav-links">
+
+    <a href="index.html" class="logo">
+        <span>Paw</span>Lux
+    </a>
+
+    <!-- NAV LINKS -->
+     <ul class="nav-links">
           <li class="dropdown">
         <a href="index.html">Home ▾</a>
  
@@ -34,26 +39,30 @@
         <li><a href="dashboard.html">Dashboard</a></li>
  
       </ul>
-     
-  <button id="rtl-toggle" class="icon-btn" >
-    RTL
-  </button>
-  <button id="theme-toggle" class="icon-btn">
- 
-      <div class="menu-toggle"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-moon" viewBox="0 0 16 16">
-  <path d="M6 .278a.77.77 0 0 1 .08.858 7.2 7.2 0 0 0-.878 3.46c0 4.021 3.278 7.277 7.318 7.277q.792-.001 1.533-.16a.79.79 0 0 1 .81.316.73.73 0 0 1-.031.893A8.35 8.35 0 0 1 8.344 16C3.734 16 0 12.286 0 7.71 0 4.266 2.114 1.312 5.124.06A.75.75 0 0 1 6 .278M4.858 1.311A7.27 7.27 0 0 0 1.025 7.71c0 4.02 3.279 7.276 7.319 7.276a7.32 7.32 0 0 0 5.205-2.162q-.506.063-1.029.063c-4.61 0-8.343-3.714-8.343-8.29 0-1.167.242-2.278.681-3.286"/>
-</svg></div>
-          <div class="button-group">
-    <div class="right-section">
-        <button style="margin-left: 10px;" class="btn secondary-btn" onclick="document.location='login.html'">
+
+    <!-- RIGHT SIDE -->
+    <div class="desktop-buttons">
+
+        <button id="rtl-toggle-desktop" class="icon-btn">
+            RTL
+        </button>
+
+        <button id="theme-toggle-desktop" class="icon-btn">
+            🌙
+        </button>
+
+        <button class="btn secondary-btn">
             Login
         </button>
-        
-        
+
+        <!-- HAMBURGER -->
+        <div class="menu-toggle" id="menu-toggle">
+            ☰
+        </div>
+
     </div>
 
-</div>
-    </nav>
+</nav>
   </header>
 
    
@@ -234,42 +243,60 @@
 
 </footer>
 <script>
- 
 
- 
-  const themeToggle = document.getElementById("theme-toggle");
- 
-  themeToggle.addEventListener("click", () => {
- 
+const themeToggle = document.getElementById("theme-toggle-desktop");
+
+themeToggle.addEventListener("click", () => {
+
     document.body.classList.toggle("dark-mode");
- 
+
     if(document.body.classList.contains("dark-mode")){
-      themeToggle.innerHTML = "☀️";
+        themeToggle.innerHTML = "☀️";
     }
     else{
-      themeToggle.innerHTML = "🌙";
+        themeToggle.innerHTML = "🌙";
     }
- 
-  });
- 
-  const rtlToggle = document.getElementById("rtl-toggle");
- 
-  rtlToggle.addEventListener("click", () => {
- 
+
+});
+
+const rtlToggle = document.getElementById("rtl-toggle-desktop");
+
+rtlToggle.addEventListener("click", () => {
+
     if(document.body.getAttribute("dir") === "rtl"){
- 
-      document.body.setAttribute("dir", "ltr");
- 
+        document.body.setAttribute("dir", "ltr");
     }
     else{
- 
-      document.body.setAttribute("dir", "rtl");
- 
+        document.body.setAttribute("dir", "rtl");
     }
- 
+
+});
+document.addEventListener("DOMContentLoaded", () => {
+
+  const menuToggle = document.getElementById("menu-toggle");
+  const navLinks = document.querySelector(".nav-links");
+  const dropdown = document.querySelector(".dropdown");
+
+  // Hamburger toggle
+  menuToggle.addEventListener("click", () => {
+    navLinks.classList.toggle("active");
+
+    menuToggle.innerHTML = navLinks.classList.contains("active")
+      ? "✖"
+      : "☰";
   });
- 
-</script>
+
+  // Mobile dropdown toggle (IMPORTANT)
+  dropdown.addEventListener("click", (e) => {
+    if (window.innerWidth <= 1024) {
+      e.preventDefault();
+      dropdown.classList.toggle("active");
+    }
+  });
+
+});
+
+</script>   
 
     
     

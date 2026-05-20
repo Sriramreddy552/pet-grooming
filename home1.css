@@ -38,7 +38,7 @@ body.dark-mode header{
 }
  
 body.dark-mode nav a{
-  color:lightgoldenrodyellow;
+  color:rgb(0, 0, 0);
 }
  
 body.dark-mode .icon-btn{
@@ -47,14 +47,14 @@ body.dark-mode .icon-btn{
 }
  
 body.dark-mode .logo{
-  color:lightgoldenrodyellow;
+  color:rgb(0, 0, 0);
 }
  
 body.dark-mode .login{
   color:lightgoldenrodyellow;
 }
  
-body.dark-mode .hero,
+
 body.dark-mode .services,
 body.dark-mode .why-us,
 body.dark-mode .contact{
@@ -68,6 +68,7 @@ body.dark-mode .testimonial-card{
   background:#1f2937;
   color:lightgoldenrodyellow;
 }
+
 .logo{
     font-size:30px;
     font-weight:700;
@@ -290,6 +291,7 @@ nav a:hover::after {
     font-size:65px;
     line-height:1.1;
     margin-bottom:20px;
+    color: white;
 }
 
 .hero-text p{
@@ -358,19 +360,6 @@ nav a:hover::after {
     animation:float 3s ease-in-out infinite;
 }
 
-@keyframes float{
-    0%{
-        transform:translateY(0);
-    }
-
-    50%{
-        transform:translateY(-15px);
-    }
-
-    100%{
-        transform:translateY(0);
-    }
-}
 .services{
     padding:80px 8%;
     text-align:center;
@@ -429,7 +418,9 @@ nav a:hover::after {
       text-align: center;
       margin-bottom: 40px;
     }
-
+ body.dark-mode .faq-title h1{
+      color:rgb(0, 0, 0);
+    }
     .faq-title h1{
       font-size: 40px;
       color: #222;
@@ -440,7 +431,10 @@ nav a:hover::after {
       color: #666;
       font-size: 18px;
     }
-
+ body.dark-mode .faq-box{
+      background:#1f2937;
+      color:rgb(0, 0, 0);
+    }
     .faq-box{
       background: #fff;
       border-radius: 12px;
@@ -494,16 +488,6 @@ nav a:hover::after {
       content: "-";
     }
 
-    @media(max-width:768px){
-
-      .faq-title h1{
-        font-size: 30px;
-      }
-
-      .faq-question{
-        font-size: 18px;
-      }
-    }
      .choose-us{
             padding: 80px 10%;
         }
@@ -561,17 +545,6 @@ nav a:hover::after {
             font-size: 16px;
         }
 
-        @media(max-width:768px){
-
-            .section-title h1{
-                font-size: 32px;
-            }
-
-            .choose-us{
-                padding: 60px 5%;
-            }
-
-        }
         .appointment{
       padding:80px 10%;
       display:flex;
@@ -653,24 +626,7 @@ nav a:hover::after {
     .appointment-btn:hover{
       background:pink;
     }
-   @media(max-width:900px){
-
-      .appointment-container{
-        grid-template-columns:1fr;
-      }
-
-      .appointment-image{
-        min-height:300px;
-      }
-
-      .appointment-form{
-        padding:35px;
-      }
-
-      .appointment-form h1{
-        font-size:32px;
-      }
-    }
+  
     .reviews{
       padding:80px 10%;
     }
@@ -838,78 +794,508 @@ list-style: none;
 
 
 
-    @media(max-width:768px){
+/* =====================================================
+   RESPONSIVE NAVBAR + HAMBURGER MENU
+===================================================== */
 
-      .reviews{
-        padding:60px 5%;
-      }
+.menu-toggle{
+    display:none;
+    font-size:28px;
+    cursor:pointer;
+    color:black;
+    z-index:1001;
+    margin-left:20px;
+}
 
-      .section-title h1{
-        font-size:32px;
-      }
+body.dark-mode .menu-toggle{
+    color:white;
+}
 
+/* =========================
+   NAVBAR DEFAULT
+========================= */
+
+.navbar{
+    position:fixed;
+    top:0;
+    left:0;
+    width:100%;
+    display:flex;
+    align-items:center;
+    justify-content:space-between;
+    padding:20px 8%;
+    background:whitesmoke;
+    z-index:1000;
+}
+
+.right-section{
+    display:flex;
+    align-items:center;
+    gap:12px;
+}
+
+.nav-links{
+    display:flex;
+    align-items:center;
+    gap:25px;
+    list-style:none;
+}
+
+.nav-links a{
+    text-decoration:none;
+    color:black;
+    font-size:15px;
+    transition:0.3s;
+}
+
+body.dark-mode .nav-links a{
+    color:white;
+}
+
+.nav-links a:hover{
+    color:var(--primary);
+}
+
+/* =====================================================
+   DROPDOWN MENU
+===================================================== */
+
+.dropdown{
+    position:relative;
+}
+
+.dropdown-menu{
+    position:absolute;
+    top:45px;
+    left:0;
+    width:180px;
+    background:white;
+    border-radius:12px;
+    padding:10px 0;
+    opacity:0;
+    visibility:hidden;
+    transition:0.3s;
+    box-shadow:0 10px 25px rgba(0,0,0,0.1);
+    z-index:999;
+}
+
+.dropdown-menu li{
+    list-style:none;
+}
+
+.dropdown-menu a{
+    display:block;
+    padding:12px 18px;
+}
+
+.dropdown:hover .dropdown-menu{
+    opacity:1;
+    visibility:visible;
+}
+
+body.dark-mode .dropdown-menu{
+    background:#1f2937;
+}
+
+/* =====================================================
+   ICON BUTTONS
+===================================================== */
+
+.icon-btn{
+    width:45px;
+    height:45px;
+    border:none;
+    border-radius:50%;
+    background:lightgoldenrodyellow;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    cursor:pointer;
+    transition:0.3s;
+    box-shadow:var(--shadow);
+}
+
+.icon-btn:hover{
+    background:var(--primary);
+    color:white;
+}
+
+.secondary-btn{
+    height:45px;
+    padding:0 22px;
+    border:none;
+    border-radius:12px;
+    cursor:pointer;
+    background:lightgoldenrodyellow;
+    font-weight:600;
+}
+
+/* =====================================================
+   SAMSUNG GALAXY S8+
+===================================================== */
+
+@media screen and (max-width:740px){
+
+    .navbar{
+        padding:18px 5%;
+        flex-wrap:wrap;
     }
 
+    .logo{
+        font-size:26px;
+        margin-right:0 !important;
+    }
 
+    .menu-toggle{
+        display:block;
+    }
 
-@media(max-width:1100px){
+    .nav-links{
+        position:absolute;
+        top:85px;
+        left:0;
+        width:100%;
+        background:white;
+        flex-direction:column;
+        align-items:center;
+        justify-content:center;
+        gap:24px;
+        padding:30px 0;
+        display:none;
+        box-shadow:0 10px 20px rgba(0,0,0,0.1);
+    }
+
+    body.dark-mode .nav-links{
+        background:#111827;
+    }
+
+    .nav-links.active{
+        display:flex;
+    }
+
+    .nav-links a{
+        font-size:17px;
+    }
+
+    .dropdown-menu{
+        position:static;
+        opacity:1;
+        visibility:visible;
+        display:none;
+        width:100%;
+        background:transparent;
+        box-shadow:none;
+        transform:none;
+    }
+
+    .dropdown:hover .dropdown-menu{
+        display:block;
+    }
+
+    .dropdown-menu a{
+        text-align:center;
+        padding:10px;
+    }
+
+    .right-section{
+        width:100%;
+        justify-content:center;
+        margin-top:20px;
+        flex-wrap:wrap;
+        gap:15px;
+    }
+
+    .icon-btn{
+        width:42px;
+        height:42px;
+        margin-left:0;
+    }
+
+    .secondary-btn{
+        height:42px;
+        padding:0 18px;
+    }
+
+    /* HERO SECTION */
 
     .hero{
         flex-direction:column;
         text-align:center;
+        padding:140px 5% 80px;
     }
 
-    .hero-content p{
-        margin:auto auto 35px;
+    .hero-text h1{
+        font-size:40px;
+    }
+
+    .hero-text p{
+        font-size:16px;
+        line-height:1.7;
     }
 
     .hero-buttons{
         justify-content:center;
-    }
-
-    .floating-card{
-        left:50%;
-        transform:translateX(-50%);
-    }
-}
-
-@media(max-width:850px){
-
-    .navbar{
-        flex-direction:column;
-        height:auto;
-        padding:20px 0;
-        gap:18px;
-    }
-
-    .nav-links{
         flex-wrap:wrap;
-        justify-content:center;
+    }
+
+    .stats{
+        flex-direction:column;
+        align-items:center;
         gap:20px;
     }
 
-    .right-section{
-        flex-wrap:wrap;
-        justify-content:center;
+    /* FOOTER */
+
+    .footer{
+        height:auto;
+        padding:50px 5%;
     }
 
-    .hero-content h1{
-        font-size:42px;
+    .footer-content{
+        flex-direction:column;
+        gap:30px;
+    }
+
+    .footer-bottom{
+        flex-direction:column;
+        text-align:center;
+        gap:15px;
+        padding:20px 0;
+        margin-right:0;
+    }
+
+    .footer-legal{
+        justify-content:center;
+        flex-wrap:wrap;
+        padding-left:0;
     }
 }
-@media(max-width:900px){
+
+/* =====================================================
+   iPAD MINI
+===================================================== */
+
+@media screen and (min-width:741px) and (max-width:900px){
+
+    .navbar{
+        padding:20px 5%;
+    }
+
+    .menu-toggle{
+        display:block;
+    }
+
+    .nav-links{
+        position:absolute;
+        top:90px;
+        left:0;
+        width:100%;
+        background:white;
+        flex-direction:column;
+        align-items:center;
+        gap:25px;
+        padding:35px 0;
+        display:none;
+    }
+
+    body.dark-mode .nav-links{
+        background:#111827;
+    }
+
+    .nav-links.active{
+        display:flex;
+    }
+
+    .dropdown-menu{
+        position:static;
+        width:100%;
+        background:transparent;
+        opacity:1;
+        visibility:visible;
+        display:none;
+        box-shadow:none;
+    }
+
+    .dropdown:hover .dropdown-menu{
+        display:block;
+    }
+
+    .right-section{
+        justify-content:center;
+        margin-top:20px;
+    }
 
     .hero{
         flex-direction:column;
         text-align:center;
+        padding:150px 5% 100px;
+    }
+
+    .hero-text h1{
+        font-size:55px;
     }
 
     .stats{
         justify-content:center;
     }
 
-    header{
+    .footer{
+        height:auto;
+    }
+
+    .footer-content{
+        justify-content:center;
+    }
+
+    .footer-bottom{
+        margin-right:0;
+    }
+}
+
+/* =====================================================
+   iPAD PRO FIX
+===================================================== */
+
+@media screen and (min-width:901px) and (max-width:1200px){
+
+    .navbar{
+        padding:20px 4%;
+        display:flex;
+        align-items:center;
+        justify-content:space-between;
+        flex-wrap:wrap;
+    }
+
+    .logo{
+        font-size:28px;
+        margin-right:0 !important;
+    }
+
+    /* SHOW HAMBURGER */
+    .menu-toggle{
+        display:block;
+        font-size:28px;
+        color:black;
+        cursor:pointer;
+        z-index:1001;
+    }
+
+    body.dark-mode .menu-toggle{
+        color:white;
+    }
+
+    /* MOBILE MENU */
+
+    .nav-links{
+        position:absolute;
+        top:90px;
+        left:0;
+        width:100%;
+        background:white;
         flex-direction:column;
+        align-items:center;
+        gap:25px;
+        padding:35px 0;
+        display:none;
+        box-shadow:0 10px 20px rgba(0,0,0,0.1);
+    }
+
+    .nav-links.active{
+        display:flex;
+    }
+
+    body.dark-mode .nav-links{
+        background:#111827;
+    }
+
+    .nav-links a{
+        color:black;
+        font-size:18px;
+    }
+
+    body.dark-mode .nav-links a{
+        color:white;
+    }
+
+    /* DROPDOWN */
+
+    .dropdown-menu{
+        position:static;
+        width:100%;
+        opacity:1;
+        visibility:visible;
+        display:none;
+        background:transparent;
+        box-shadow:none;
+        transform:none;
+    }
+
+    .dropdown:hover .dropdown-menu{
+        display:block;
+    }
+
+    .dropdown-menu a{
+        text-align:center;
+    }
+
+    /* RTL + DARK + LOGIN */
+
+    .right-section{
+        width:100%;
+        display:flex;
+        justify-content:center;
+        align-items:center;
+        flex-wrap:wrap;
         gap:15px;
+        margin-top:20px;
+    }
+
+    .icon-btn{
+        width:45px;
+        height:45px;
+        margin-left:0;
+    }
+
+    .secondary-btn{
+        height:45px;
+        padding:0 22px;
+    }
+
+    /* HERO */
+
+    .hero{
+        padding:150px 5% 100px;
+        text-align:center;
+        flex-direction:column;
+    }
+
+    .hero-text h1{
+        font-size:58px;
+    }
+
+    .hero-buttons{
+        justify-content:center;
+    }
+
+    .stats{
+        justify-content:center;
+    }
+
+    /* FOOTER */
+
+    .footer{
+        height:auto;
+    }
+
+    .footer-content{
+        gap:25px;
+        justify-content:center;
+    }
+
+    .footer-bottom{
+        margin-right:0;
+        flex-wrap:wrap;
+        gap:15px;
+        text-align:center;
     }
 }

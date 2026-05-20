@@ -10,6 +10,15 @@ body{
     color:#fff;
     overflow-x:hidden;
 }
+:root{
+    --primary:#ff8fa3;
+    --secondary:#fff5ef;
+    --cream:#fffaf5;
+    --dark:black;
+    --light:#666;
+    --white:#fff;
+    --shadow:0 10px 35px rgba(0,0,0,0.08);
+}
 
 /* ================= SIDEBAR ================= */
 
@@ -26,15 +35,23 @@ body{
 }
 
 .logo{
-    text-align:center;
-    font-size:32px;
+ font-family:'Outfit', sans-serif;
+ font-size:30px;
+ font-weight:800;
+
+
+ letter-spacing:1px;
+ white-space:nowrap;
+}
+ 
+.logo{
+    font-size:30px;
     font-weight:700;
-    margin-bottom:50px;
-    color:#f472b6;
+    color:var(--dark);
 }
 
 .logo span{
-    color:black;
+    color:var(--primary);
 }
 
 .menu{

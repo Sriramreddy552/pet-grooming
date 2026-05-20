@@ -38,7 +38,7 @@ body.dark-mode header{
 }
  
 body.dark-mode nav a{
-  color:lightgoldenrodyellow;
+  color:rgb(0, 0, 0);
 }
  
 body.dark-mode .icon-btn{
@@ -47,7 +47,7 @@ body.dark-mode .icon-btn{
 }
  
 body.dark-mode .logo{
-  color:lightgoldenrodyellow;
+  color:rgb(0, 0, 0);
 }
  
 body.dark-mode .login{
@@ -446,6 +446,7 @@ nav a:hover::after {
     .plan-card h2{
       font-size:30px;
       margin-bottom:10px;
+      color: black;
     }
 
     .plan-desc{

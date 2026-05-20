@@ -38,7 +38,7 @@ body.dark-mode header{
 }
  
 body.dark-mode nav a{
-  color:lightgoldenrodyellow;
+  color:rgb(0, 0, 0);
 }
  
 body.dark-mode .icon-btn{
@@ -47,7 +47,7 @@ body.dark-mode .icon-btn{
 }
  
 body.dark-mode .logo{
-  color:lightgoldenrodyellow;
+  color:rgb(0, 0, 0);
 }
  
 body.dark-mode .login{
@@ -341,10 +341,15 @@ nav a:hover::after {
   font-size:42px;
   margin-bottom:15px;
 }
-
+body.dark-mode .section-title h2{
+  color:rgb(255, 255, 255);
+}
 .section-title p{
   color:#666;
   font-size:17px;
+}
+body.dark-mode .section-title p{
+  color:rgb(255, 253, 253);
 }
 
 .blog-container{
@@ -387,7 +392,9 @@ nav a:hover::after {
   margin:18px 0;
   font-size:24px;
 }
-
+body.dark-mode .blog-content h3{
+  color:rgb(0, 0, 0);
+}
 .blog-content p{
   color:#666;
   line-height:1.8;
