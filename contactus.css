@@ -322,14 +322,14 @@ nav a:hover::after {
       margin-bottom:20px;
     }
  body.dark-mode .contact-info h2{
-  color:rgb(0, 0, 0); }
+  color:rgb(255, 255, 255); }
     .contact-info p{
       color:var(--light);
       line-height:1.8;
       margin-bottom:35px;
     }
 body.dark-mode .contact-info p{
-  color:rgb(0, 0, 0); }
+  color:rgb(255, 255, 255); }
     .info-box{
       display:flex;
       align-items:center;
@@ -379,7 +379,8 @@ body.dark-mode .contact-info p{
       margin-bottom:30px;
       font-size:36px;
     }
-
+   body.dark-mode .contact-form h2{
+    color:rgb(0, 0, 0); }
     .input-box{
       margin-bottom:20px;
     }

@@ -522,7 +522,8 @@ nav a:hover::after {
     .benefit-box h3{
       margin:18px 0 10px;
     }
-
+    body.dark-mode .benefit-box h3{
+  color:rgb(0, 0, 0); }
     .benefit-box p{
       color:var(--light);
       line-height:1.7;
